@@ -24,9 +24,27 @@
     <![endif]-->
   </head>
 
-  <body>
-    <nav>
-      
+  <body id="myPage" data-target=".navbar" data-offset="60" data-spy="scroll">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#news">News</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="jumbotron text-center">
@@ -43,8 +61,8 @@
       </form>
     </div>
 
-    <div class="container-fluid text-center">
-      <h2>Updates and Information</h2>
+    <div class="container-fluid text-center" id="news">
+      <h2>News</h2>
       <div class="carousel slide text-center" id="myCarousel" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
