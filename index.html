@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home - Company Name</title>
+    <title>Home - Unholy Realms</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -40,15 +40,23 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#home"><h1>LOGO</h1></a>
+            <a class="navbar-brand" href="#home"><h1>Unholy Realms</h1></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <div class="menu">
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation"><a href="#home">HOME</a></li>
-                <li role="presentation"><a href="#games">GAMES</a></li>
-                <li role="presentation"><a href="#">Link 4</a></li>
-                <li role="presentation"><a href="#">Link 5</a></li>
+                <li class="active" role="presentation"><a href="#home">Home</a></li>
+                <li role="presentation"><a href="#news">News</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Games <span class="caret"></span></a>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a class="dropdown-item" href="#games">The Shattered Lands</a></li>
+                      <!-- <li><div class="dropdown-divider"></div></li> -->
+                    </ul>
+                  </div>
+                </li>
+                <li role="presentation"><a href="#account">Account</a></li>
               </ul>
             </div>
           </div>
@@ -73,20 +81,20 @@
               <img src="img/slide.jpg" class="img-responsive" alt="">
               <div class="carousel-caption">
                 <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-                  <h2><span>Clean & Modern Design Template</span></h2>
+                  <h2><span>The Shattered Lands</span></h2>
                 </div>
                 <div class="col-md-10 col-md-offset-1">
                   <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <p>What will you do when the world shatters?</p>
                   </div>
                 </div>
                 <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
                   <form class="form-inline">
                     <div class="form-group">
-                      <button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">Live Demo</button>
+                      <button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">Learn More</button>
                     </div>
                     <div class="form-group">
-                      <button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required">Get Now</button>
+                      <button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required">Sign Up</button>
                     </div>
                   </form>
                 </div>
@@ -96,48 +104,50 @@
               <img src="img/slide.jpg" class="img-responsive" alt="">
               <div class="carousel-caption">
                 <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
-                  <h2>Fully Responsive</h2>
+                  <h2>Be a tester!</h2>
                 </div>
                 <div class="col-md-10 col-md-offset-1">
                   <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <p>Make a difference in the games you play.</p>
                   </div>
                 </div>
                 <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">
                   <form class="form-inline">
                     <div class="form-group">
-                      <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Live Demo</button>
+                      <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Learn More</button>
                     </div>
                     <div class="form-group">
-                      <button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">Get Now</button>
+                      <button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">Sign Up</button>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
+            <!--
             <div class="item">
               <img src="img/slide.jpg" class="img-responsive" alt="">
               <div class="carousel-caption">
                 <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-                  <h2>Modern Design</h2>
+                  <h2>Product 3</h2>
                 </div>
                 <div class="col-md-10 col-md-offset-1">
                   <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <p>Product 3 one-line pitch.</p>
                   </div>
                 </div>
                 <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
                   <form class="form-inline">
                     <div class="form-group">
-                      <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Live Demo</button>
+                      <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Call to action 1</button>
                     </div>
                     <div class="form-group">
-                      <button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">Get Now</button>
+                      <button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">Call to action 2</button>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
+            -->
           </div>
 
           <!-- Left and right controls -->
@@ -147,34 +157,89 @@
       </div>
     </div>
 
+    <!-- Container for About section -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2>We make games that defy the norm.</h2>
+          <div class="col-md-10 col-md-offset-1">
+            <p>Games have become stagnant and built around a template. We are going against the grain and formulas to bring you new and exciting games that promise a unique feel and breath of fresh air. We are Unholy Realms.</p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="btn-gamp">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="gamp-btn">
+              <a href="#">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Container for News section -->
+    <div class="services" id="news">
+      <div class="container">
+        <div class="text-center">
+          <h2>News & Updates</h2>
+        </div>
+        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <i class="fa fa-book"></i>
+          <h3>The Shattered Lands Have Shattered</h3>
+          <p>Development on The Shattered Lands has started. Stay tuned for more content and information.</p>
+        </div>
+        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <i class="fa fa-heart"></i>
+          <h3>Become a Tester</h3>
+          <p>We are working on a new system for you to be a part of the community and make a difference in the games that you play.</p>
+        </div>
+        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <i class="fa fa-gear"></i>
+          <h3>Tester System is Coming!</h3>
+          <p>We are building a robust system for users to get involved in the development of our games. Check back later for more information.</p>
+        </div>
+        <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+          <i class="fa fa-gear"></i>
+          <h3>Registration is on the Way</h3>
+          <p>We will soon enable the ability for users to register game and test accounts.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container for Games section -->
+    <!--
     <section class="action" id="games">
       <div class="container">
         <div class="left-text hidden-xs">
-          <h4>THE SHATTERED LANDS</h4>
-          <p><em>Starting development soon...</em><br><br>We will be starting development very soon.</p>
+          <h4>Game Title</h4>
+          <p><em>Game one-line pitch.</em><br><br>Game description.</p>
         </div>
-        <div class="right-image hidden-xs">
+        <div class="right-image hidden-xs" title="Game Logo Image">
         </div>
       </div>
     </section>
+    -->
 
     <!-- Container for Footer section -->
     <footer>
       <div class="container">
         <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
           <h4>About Us</h4>
-          <p>Day is tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
+          <p>We are a startup game studio located in the south-east of the United States.</p>
           <div class="contact-info">
             <ul>
-              <li><i class="fa fa-home fa"></i>Suite 54 Elizebth Street, Victoria State Newyork, USA</li>
-              <li><i class="fa fa-phone fa"></i>+38 000 129900</li>
-              <li><i class="fa fa-envelope fa"></i>info@domain.net</li>
+              <li><i class="fa fa-home fa"></i># Street Address, City, State Zip</li>
+              <li><i class="fa fa-phone fa"></i>+1 000 129900</li>
+              <li><i class="fa fa-envelope fa"></i>info@unholyrealms.com</li>
             </ul>
           </div>
         </div>
         <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
           <div class="text-center">
-            <h4>Photo Gallery</h4>
+            <h4>Media Gallery</h4>
             <ul class="sidebar-gallery">
               <li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
               <li><a href="#"><img src="img/gallery2.png" alt="" /></a></li>
@@ -188,12 +253,12 @@
         <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
           <div class="">
             <h4>Newsletter Registration</h4>
-            <p>Subscribe today to receive the latest Day news via email. You may unsubscribe from this service at any time</p>
+            <p>Subscribe today to receive the latest news and updates via email. You may unsubscribe from this service at any time.</p>
             <div class="btn-gamp">
               <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email Address">
             </div>
             <div class="btn-gamp">
-              <a type="submit" class="btn btn-default">Subscribe!</a>
+              <a type="submit" class="btn btn-default">Subscribe</a>
             </div>
           </div>
         </div>
