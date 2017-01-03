@@ -8,17 +8,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home - Dreamforged Studios</title>
+    <title>Home - Company Name</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" href="favicon.ico">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/b39e976c97.js"></script>
+    <!-- <script src="https://use.fontawesome.com/b39e976c97.js"></script> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,153 +28,201 @@
     <![endif]-->
   </head>
 
-  <body id="myPage" data-target=".navbar" data-offset="60" data-spy="scroll">
-    <!-- Container for Navbar section -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+  <body id="home" data-target=".navbar" data-offset="60" data-spy="scroll">
+    <header id="header">
+      <!-- Container for Navbar section -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home"><h1>LOGO</h1></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="menu">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="#home">HOME</a></li>
+                <li role="presentation"><a href="#games">GAMES</a></li>
+                <li role="presentation"><a href="#">Link 4</a></li>
+                <li role="presentation"><a href="#">Link 5</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Container for Slider section -->
+    <div class="slider">
+      <div id="about-slider">
+        <div class="carousel slide" id="carousel-slider" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators visible-xs">
+            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/slide.jpg" class="img-responsive" alt="">
+              <div class="carousel-caption">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+                  <h2><span>Clean & Modern Design Template</span></h2>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  </div>
+                </div>
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
+                  <form class="form-inline">
+                    <div class="form-group">
+                      <button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">Live Demo</button>
+                    </div>
+                    <div class="form-group">
+                      <button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required">Get Now</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/slide.jpg" class="img-responsive" alt="">
+              <div class="carousel-caption">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
+                  <h2>Fully Responsive</h2>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  </div>
+                </div>
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">
+                  <form class="form-inline">
+                    <div class="form-group">
+                      <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Live Demo</button>
+                    </div>
+                    <div class="form-group">
+                      <button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">Get Now</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/slide.jpg" class="img-responsive" alt="">
+              <div class="carousel-caption">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+                  <h2>Modern Design</h2>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  </div>
+                </div>
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
+                  <form class="form-inline">
+                    <div class="form-group">
+                      <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Live Demo</button>
+                    </div>
+                    <div class="form-group">
+                      <button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">Get Now</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+          <a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <section class="action" id="games">
       <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#myPage">LOGO</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#myPage">HOME</a></li>
-            <li><a href="#news">NEWS</a></li>
-            <li><a href="#games">GAMES</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Container for Header section -->
-    <div class="jumbotron text-center">
-      <h1>Dreamforged Studios</h1>
-      <p>We are Dreamforged Studios.</p>
-
-      <form class="form-inline" action="">
-        <div class="input-group">
-          <input class="form-control" type="email" size="50" placeholder="Email Address" required>
-          <div class="input-group-btn">
-            <button class="btn btn-sub" type="button">Subscribe!</button>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <!-- Container for News section -->
-    <div class="container-fluid text-center" id="news">
-      <h2>NEWS</h2>
-      <div class="carousel slide text-center" id="myCarousel" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="active item">
-            <h4>This is stuff 1.</h4>
-          </div>
-          <div class="item">
-            <h4>This is stuff 2.</h4>
-          </div>
-          <div class="item">
-            <h4>This is stuff 3.</h4>
-          </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Container for Games section -->
-    <div class="container-fluid text-center" id="games">
-      <h2>GAMES</h2>
-      <h4>It's what we do.</h4>
-      <br>
-      <div class="row slideanim">
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-off logo-small"></span>
+        <div class="left-text hidden-xs">
           <h4>THE SHATTERED LANDS</h4>
-          <p>Starting development soon...</p>
+          <p><em>Starting development soon...</em><br><br>We will be starting development very soon.</p>
         </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-heart logo-small"></span>
-          <h4>LOVE</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-lock logo-small"></span>
-          <h4>JOB DONE</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
+        <div class="right-image hidden-xs">
         </div>
       </div>
-      <br><br>
-      <div class="row slideanim">
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-leaf logo-small"></span>
-          <h4>GREEN</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-certificate logo-small"></span>
-          <h4>CERTIFIED</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-wrench logo-small"></span>
-          <h4 style="color:#303030;">HARD WORK</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- Container for Footer section -->
-    <footer class="container-fluid text-center">
-      <a href="#myPage" title="Back to the Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
-      <div class="row">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; 2016-2017 Dreamforged Studios. All Rights Reserved.</span>
+    <footer>
+      <div class="container">
+        <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <h4>About Us</h4>
+          <p>Day is tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
+          <div class="contact-info">
+            <ul>
+              <li><i class="fa fa-home fa"></i>Suite 54 Elizebth Street, Victoria State Newyork, USA</li>
+              <li><i class="fa fa-phone fa"></i>+38 000 129900</li>
+              <li><i class="fa fa-envelope fa"></i>info@domain.net</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4">
-          <br>
+        <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="text-center">
+            <h4>Photo Gallery</h4>
+            <ul class="sidebar-gallery">
+              <li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
+              <li><a href="#"><img src="img/gallery2.png" alt="" /></a></li>
+              <li><a href="#"><img src="img/gallery3.png" alt="" /></a></li>
+              <li><a href="#"><img src="img/gallery4.png" alt="" /></a></li>
+              <li><a href="#"><img src="img/gallery5.png" alt="" /></a></li>
+              <li><a href="#"><img src="img/gallery6.png" alt="" /></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#" title="YouTube"><i class="fa fa-youtube-play"></i></a></li>
-            <li><a href="#" title="Twitch.tv"><i class="fa fa-twitch"></i></a></li>
-            <li><a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#" title="GitHub"><i class="fa fa-github"></i></a></li>
-            <li><a href="#" title="Reddit"><i class="fa fa-reddit"></i></a></li>
-            <li><a href="#" title="Steam"><i class="fa fa-steam"></i></a></li>
-            <li><a href="#" title="Email"><i class="fa fa-inbox"></i></a></li>
-          </ul>
+        <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <div class="">
+            <h4>Newsletter Registration</h4>
+            <p>Subscribe today to receive the latest Day news via email. You may unsubscribe from this service at any time</p>
+            <div class="btn-gamp">
+              <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email Address">
+            </div>
+            <div class="btn-gamp">
+              <a type="submit" class="btn btn-default">Subscribe!</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
+    <div class="sub-footer">
+      <div class="container">
+        <div class="social-icon">
+          <div class="col-md-8">
+            <ul class="social-network">
+              <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#" class="ytube tool-tip" title="YouTube"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="copyright">
+            <p>Copyright &copy; 2016-2017 Unholy Realms. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/style.js"></script>
+    <script src="js/wow.min.js"></script>
+  	<script>wow = new WOW({}).init();</script>
   </body>
 </html>
