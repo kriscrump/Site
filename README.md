@@ -1,2 +1,4 @@
 # Site
-Company Site by Kristopher Crump
+Company Site in progress
+
+Author: Kristopher Crump
