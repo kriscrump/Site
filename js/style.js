@@ -21,7 +21,6 @@ $(document).ready(function(){
     } // End if
   });
 
-// Testing
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
