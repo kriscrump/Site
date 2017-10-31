@@ -1,4 +1,4 @@
 # Site
 Company Site in progress
 
-Kristopher Crump
+Authored by Kristopher Crump
